@@ -1,0 +1,13 @@
+a{
+    color: white;
+}
+
+.fondo-nav{
+    margin-top: opx;
+    background-color: #606060;
+    opacity: 0.4;
+}
+
+.container h2:first-letter {
+    text-transform: uppercase;
+}
