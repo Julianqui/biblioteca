@@ -36,4 +36,13 @@ $(document).ready(function(){
 		});
 	});
 
+	$(document).ready(function(){
+		$(".ahora").click(function(){
+			$(".cierra").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
+		});
+	});
+
 });
