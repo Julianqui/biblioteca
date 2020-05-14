@@ -1477,8 +1477,8 @@
                   </span>
                 </h5>
               </div>
-
-              <div id="collapseOne" style="display: none" class="collapse mostrar1" aria-labelledby="headingOne" data-parent="#accordion">
+              <!--id="collapseOne"-->
+              <div style="display: none" class="collapse mostrar1" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
@@ -1495,7 +1495,7 @@
                   </span>
                 </h5>
               </div>
-              <div id="collapseTwo" style="display: none" class="collapse border-0 fondo-btn mostrar2" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div style="display: none" class="collapse border-0 fondo-btn mostrar2" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
@@ -1512,7 +1512,7 @@
                   </span>
                 </h5>
               </div>
-              <div id="collapseThree" style="display: none" class="collapse mostrar3" aria-labelledby="headingThree" data-parent="#accordion">
+              <div style="display: none" class="collapse mostrar3" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
@@ -1554,18 +1554,20 @@
           <div class="col-md-6">
             <div id="accordion">
               <div class="">
+
                 <div id="headingOne">
                   <h5>
-                    <a class="text-decoration-none pregunta1 panel" href="" data-toggle="collapse" aria-expanded="false">
+                    <a class="btn text-decoration-none pregunta1 w-100 text-left panel mb-0" href="" data-toggle="collapse" aria-expanded="false">
                         Blockchain
                     </a>
                   </h5>
                 </div>
+
               </div>
-              <div class="pt-2">
+              <div class="">
                 <div class="" id="headingTwo">
                   <h5>
-                    <a class="collapsed text-decoration-none pregunta2 panel" href="" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    <a class="btn collapsed text-decoration-none pregunta2 panel w-100 text-left mb-0" href="" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                       Inteligencia artificial
                     </a>
                   </h5>
@@ -1576,10 +1578,10 @@
                   </div>
                 </div>-->
               </div>
-              <div class="pt-2">
+              <div>
                 <div class="" id="headingThree">
                   <h5>
-                    <a class="collapsed text-decoration-none pregunta3 panel" href="" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    <a class="btn collapsed text-decoration-none pregunta3 panel w-100 text-left mb-0" href="" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                       Automotizacion Robotica de Procesos
                     </a>
                   </h5>
@@ -1590,10 +1592,10 @@
                   </div>
                 </div>-->
               </div>
-              <div class="pt-2">
+              <div>
                 <div class="" id="headingThree">
                   <h5>
-                    <a class="collapsed text-decoration-none pregunta4 panel" href="" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <a class="btn collapsed text-decoration-none pregunta4 panel w-100 text-left mb-0" href="" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                      Aplicaciones moviles
                     </a>
                   </h5>
@@ -1818,6 +1820,7 @@
       else{
         $(".respuesta1").show();
         $(".pregunta1").addClass('puesto');
+
       }
     });
 
@@ -1910,19 +1913,25 @@
       $(".operacion1").removeClass('fa fa-plus');
       $(".operacion1").addClass('fa fa-minus');
 
-      $(".mostrame1").show();
+      $(".mostrar1").show();
 
 
       $(".operacion2").removeClass('fa fa-minus');
       $(".operacion2").addClass('fa fa-plus');
+
+      $(".mostrar2").hide();
     }
 
     else if($(".operacion3").hasClass('fa fa-minus')){
       $(".operacion3").removeClass('fa fa-minus');
       $(".operacion3").addClass('fa fa-plus');
 
+      $(".mostrar3").hide();
+
       $(".operacion1").removeClass('fa fa-plus');
       $(".operacion1").addClass('fa fa-minus');
+
+      $(".mostrar1").show();
     }
     else if($(".operacion1").hasClass('fa fa-minus')){
       $(".operacion1").removeClass('fa fa-minus');
@@ -1945,18 +1954,24 @@
       $(".operacion2").removeClass('fa fa-plus');
       $(".operacion2").addClass('fa fa-minus');
 
-      $(".mostrar2").hide();
+      $(".mostrar2").show();
 
       $(".operacion1").removeClass('fa fa-minus');
       $(".operacion1").addClass('fa fa-plus');
+
+      $(".mostrar1").hide();
     }
 
     else if($(".operacion3").hasClass('fa fa-minus')){
       $(".operacion3").removeClass('fa fa-minus');
       $(".operacion3").addClass('fa fa-plus');
 
+      $(".mostrar3").hide();
+
       $(".operacion2").removeClass('fa fa-plus');
       $(".operacion2").addClass('fa fa-minus');
+
+      $(".mostrar2").show();
     }
     else if($(".operacion2").hasClass('fa fa-minus')){
       $(".operacion2").removeClass('fa fa-minus');
@@ -1982,14 +1997,20 @@
 
       $(".operacion1").removeClass('fa fa-minus');
       $(".operacion1").addClass('fa fa-plus');
+
+      $(".mostrar1").hide();
     }
 
     else if($(".operacion2").hasClass('fa fa-minus')){
       $(".operacion2").removeClass('fa fa-minus');
       $(".operacion2").addClass('fa fa-plus');
 
+      $(".mostrar2").hide();
+
       $(".operacion3").removeClass('fa fa-plus');
       $(".operacion3").addClass('fa fa-minus');
+
+      $(".mostrar3").show();
     }
     else if($(".operacion3").hasClass('fa fa-minus')){
       $(".operacion3").removeClass('fa fa-minus');
@@ -2004,6 +2025,11 @@
       $(".mostrar3").show();
     }
   });
+
+
+
+
+
 
 
 

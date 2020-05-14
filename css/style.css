@@ -34,3 +34,8 @@ a{
 
 }
 
+.btn:hover{
+    font-weight: 400;
+}
+
+
