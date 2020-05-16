@@ -35,11 +35,11 @@
         <!--Buscador-->
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-5 col-md-offset-2">
           <div class="form-group">
-            <div class="input-group small-search">
+            <div class="input-group small-search input-sm">
               <input placeholder="Buscar tramites, servicios o areas" class="form-control input-md" type="text">
-              <span class="input-group-btn" style="border-radius:0px;">
+              <span class="input-group-btn" style="border-radius:0px; height: 38px">
                     <button class="btn btn-default btn-md ml-0 h-100" style="background-color: #175388" type="button"><span style="font-size: 1rem; color: #FFFFFF"> <i class="fa fa-search"></i></span></button>
-                  </span>
+              </span>
             </div>
           </div>
         </div>
@@ -57,37 +57,48 @@
   </header>
 
   <main role="main">
-    <section class="jumbotron derivador baner-principal" style="background-image: url('img/download.jpg');">
+    <section class="jumbotron derivador mb-5 pb-5" style="background-image: url('img/download.jpg');">
       <div class="container-fluid">
         <div class="row">
 
       <!--Navabar-->
           <section class="navbar navbar-expand-lg fondo-nav w-100">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav offset-1">
+            <div class="container collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-3">
                 <li class="nav-item active">
-                  <a class="nav-link" style="color: white; font-family: Roboto" href="#">Inicio /<span class="sr-only">(current)</span></a>
+                  <a class="nav-link pr-1" style="color: white; font-family: Roboto" href="" >Inicio<span class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white; font-family: Roboto" href="#">Ministerio de desarrollo productivo /</a>
+                  <a class="nav-link ml-0 pl-0 mr-0 pr-0" style="color: white; font-family: Roboto" href="#">/<span class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white" href="#">Direccion de informatica</a>
+                  <a class="nav-link pl-1 pr-1" style="color: white; font-family: Roboto" href="#">Ministerio de desarrollo productivo </a>
+                </li>
+
+                <li class="nav-item active">
+                  <a class="nav-link ml-0 pl-0 mr-0 pr-0" style="color: white; font-family: Roboto" href="#">/<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link pl-1" style="color: white" href="#">Direccion de informatica</a>
                 </li>
               </ul>
             </div>
           </section>
 
         <!--Banner-->
-          <div class="container col-md-offset-1 col-md-10">
+        <div class="container d-flex justify-content-center">
+          <div class="col-md-6">
             <h2 style="text-transform: lowercase">Direccion de informatica</h2>
-
             <h3>Informacion sobre las medidas y ahorros en tiempo y dinero destinados al sector productivo.</h3>
 
           </div>
+
         </div>
       </div>
-
+      </div>
     </section>
 
 
@@ -123,7 +134,7 @@
                 </a>
               </div>
               <div class="col-md-4">
-                <a type="button" class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeFis" href="">
+                <a class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeFis" href="">
                   <div class="panel-heading" style="background-image:url(img/automotriz0-1.jpg);min-height:188px;"></div>
                   <header class="panel-body">
                     <h4 style="font-weight: 500;">Precios Claros</h4>
@@ -132,7 +143,7 @@
                 </a>
               </div>
               <div class="col-md-4">
-                <a type="button" class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeMo" href="">
+                <a class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeMo" href="">
                   <div class="panel-heading" style="background-image:url(img/automotriz0-1.jpg);min-height:188px;"></div>
                   <header class="panel-body">
                     <h4 style="font-weight: 500;">Turnino</h4>
@@ -141,7 +152,7 @@
                 </a>
               </div>
               <div class="col-md-4">
-                <a type="button" class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeGe" href="">
+                <a class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeGe" href="">
                   <div class="panel-heading" style="background-image:url(img/automotriz0-1.jpg);min-height:188px;"></div>
                   <header class="panel-body">
                     <h4 style="font-weight: 500;">Comprador</h4>
@@ -150,7 +161,7 @@
                 </a>
               </div>
               <div class="col-md-4">
-                <a type="button" class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeMuni" href="">
+                <a class="panel panel-default panel-icon" data-toggle="modal" data-target="#modalLargeMuni" href="">
                   <div class="panel-heading" style="background-image:url(img/automotriz0-1.jpg);min-height:188px;"></div>
                   <header class="panel-body">
                     <h4 style="font-weight: 500;">Apk mobile</h4>
@@ -174,146 +185,161 @@
     </section>
 
     <div class="modal fade common-modal" id="modalLarge" tabindex="-1" role="dialog" aria-labelledby="modalLargeLabel"  style="z-index: 1050;">
+
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="container mt-4">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true" style="font-size: 1.2em;">&times;</span></button>
-            <p class="modal-title" id="modalLargeLabel"><strong> JIMENEZ </strong> | Orquestador lateral de expedientes</p>
+            <p class="modal-title ml-2" id="modalLargeLabel"><strong> JIMENEZ </strong> | Orquestador lateral de expedientes</p>
           </div>
-          <div class="modal-body">
+          <div class="container">
+            <hr>
+          </div>
+          <div class=" modal-body">
             <div class="row">
-              <div class="col-sm-12 col-md-4">
-                <img src="img/min-prodytrab-logo.svg" style="width: 90%;" class="img-responsive">
+              <div class="col-sm-12 col-md-3">
+                <img src="img/logo-1.svg" class="img-responsive w-100">
               </div>
-              <div class="col-sm-12 col-md-8 text-center" style="margin-top: 1%">
+              <div class="col-sm-12 col-md-9 mt-1">
+                <h4 class="text-uppercase">Ministerio de desarrollo productivo</h4>
               </div>
             </div>
             <br>
-            <h6 class="t-14" style="">DESCRIPCIÓN</h6>
+            <div>
+              <h6 class="t-14" style="">DESCRIPCIÓN</h6>
 
-            <p class="t-14">Ahora los trámites se aprueban en segundos y sus resultados los informamos sin necesidad de que el ciudadano o empresa se mueva de casa/oficina.</p>
-            <p class="t-14">
-              Jimenez es un bot, se interrelaciona con otros organismos, evitando que distintas reparticiones del estado
-              soliciten múltiples e idénticos requerimientos de información, reduciendo drásticamente los tiempos de trámites.
-              Con Jimenez, <strong>el Estado trabaja 24 horas</strong>, sí, sábado y domingo incluidos.
-            </p>
-            <br>
-            <div class="container-fluid">
-              <div class="col-sm-12 col-md-3 text-center">
-                <img src="img/robot.svg" class="margin-20 img-thumbnail border-0" width="80">
-                <p class="t-14"><strong>Automatización</strong></p>
-                <p class="" style="font-size: 12px">Evalúa y ejecuta acciones administrativas e informativas. </p>
-              </div>
-              <div class="col-sm-12 col-md-3 text-center">
-                <img src="img/anticorrupcion.svg" class="margin-20 img-thumbnail border-0" width="60">
-                <p class="t-14"><strong>Trazabilidad</strong></p>
-                <p class="" style="font-size: 12px">Asegura procesos repetibles y resguardo de información</p>
-              </div>
-              <div class="col-sm-12 col-md-3 text-center">
-                <img src="img/conexion.svg" class="margin-20 img-thumbnail border-0" width="80">
-                <p class="t-14"><strong>Interoperabilidad</strong></p>
-                <p  style="font-size: 12px">Reutiliza información que posee el Estado evitando duplicar requerimientos</p>
-              </div>
-            </div>
+              <p class="t-14">Ahora los trámites se aprueban en segundos y sus resultados los informamos sin necesidad de que el ciudadano o empresa se mueva de casa/oficina.</p>
+              <p class="t-14">
+                Jimenez es un bot, se interrelaciona con otros organismos, evitando que distintas reparticiones del estado
+                soliciten múltiples e idénticos requerimientos de información, reduciendo drásticamente los tiempos de trámites.
+                Con Jimenez, <strong>el Estado trabaja 24 horas</strong>, sí, sábado y domingo incluidos.
+              </p>
+              <br>
 
-            <div class="container-fluid t-14">
-              <h5 class="t-14 text-uppercase">Función principal</h5>
-              <p><strong>Automatizar operaciones</strong></p>
-              <p>- Validar información contenida en expedientes comprobando cálculos y veracidad</p>
-            </div>
-
-            <div class="container-fluid t-14">
-              <h5 class="t-14 text-uppercase">Otras funcionalidades</h5>
-              <p>- Caratular un expediente electrónico y ejecutar acciones de bloqueo, pases, vinculación, generar documentos y archivo.</p>
-              <p>- Leer y extraer información adjunta al expediente: Excels, Word, documentos de texto, imagen y los almacena en bases de datos.</p>
-              <p>- Crear documentos (ej. gedos) con información tabulada.</p>
-              <p>- Invocar webservices y notificar a un ciudadano el estado del expediente</p>
-            </div>
-            <br>
-            <div class="container-fluid" style="border-top: 1px solid #CCCCCC;">
-              <h4 class="t-14 text-uppercase" style="padding-top: 10px;">Estadísticas destacadas</h4>
               <div class="row">
-                <div class="col-xs-12 col-md-4">
-                  <h2 class="text-success" style="font-size: 2.5em;">1300</h2>
-                  <p class="t-14">Expedientes procesados online a diario</p>
+                <div class="d-md-flex">
+                  <div class="col-xs-12 col-sm-12 col-md-3 text-center">
+                    <img src="img/modernizacion.jpg" class="img-thumbnail border-0" width="80">
+                    <p class="t-14"><strong>Automatización</strong></p>
+                    <p class="" style="font-size: 12px">Evalúa y ejecuta acciones administrativas e informativas. </p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-3 text-center">
+                    <img src="img/modernizacion.jpg" class="img-thumbnail border-0" width="80">
+                    <p class="t-14"><strong>Trazabilidad</strong></p>
+                    <p class="" style="font-size: 12px">Asegura procesos repetibles y resguardo de información</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-3 text-center">
+                    <img src="img/modernizacion.jpg" class="img-thumbnail border-0" width="80">
+                    <p class="t-14"><strong>Interoperabilidad</strong></p>
+                    <p  style="font-size: 12px">Reutiliza información que posee el Estado evitando duplicar requerimientos</p>
+                  </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                  <h2 class="text-primary" style="font-size: 2.5em;">10</h2>
-                  <p class="t-14">Trámites automatizados</p>
+
+              </div>
+
+
+
+
+              <div class="t-14 mt-5">
+                <h5 class="t-14 text-uppercase">Función principal</h5>
+                <p class="mb-0 pb-0"><strong>Automatizar operaciones</strong></p>
+                <p>Validar información contenida en expedientes comprobando cálculos y veracidad</p>
+              </div>
+
+              <div class="t-14 mt-4">
+                <h5 class="t-14 text-uppercase">Otras funcionalidades</h5>
+                <div class="container">
+                  <p class="pb-0 mb-1">- Caratular un expediente electrónico y ejecutar acciones de bloqueo, pases, vinculación, generar documentos y archivo.</p>
+                  <p class="pb-0 mb-1">- Leer y extraer información adjunta al expediente: Excels, Word, documentos de texto, imagen y los almacena en bases de datos.</p>
+                  <p class="pb-0 mb-1">- Crear documentos (ej. gedos) con información tabulada.</p>
+                  <p>- Invocar webservices y notificar a un ciudadano el estado del expediente</p>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                  <h2 class="text-azulado" style="font-size: 2.5em;">21 días</strong></h2>
-                  <p class="t-14">Tiempo promedio de automatización de un trámite</p>
+              </div>
+              <br>
+              <div class="container" style="border-top: 1px solid #CCCCCC;">
+                <h4 class="t-14 text-uppercase" style="padding-top: 10px;">Estadísticas destacadas</h4>
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <h2 class="text-success" style="font-size: 2.5em;">1300</h2>
+                    <p class="t-14">Expedientes procesados online a diario</p>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <h2 class="text-primary" style="font-size: 2.5em;">10</h2>
+                    <p class="t-14">Trámites automatizados</p>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <h2 class="text-azulado" style="font-size: 2.5em;">21 días</strong></h2>
+                    <p class="t-14">Tiempo promedio de automatización de un trámite</p>
+                  </div>
+                </div>
+              </div>
+              <div class="" style="border-top: 1px solid #CCCCCC;">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6 mt-4 mb-4">
+                    <img src="img/tablet.jpg" class="img-responsive w-100 h-100">
+                  </div>
+                  <div class="col-xs-12 col-md-3 mt-4 mb-4">
+                    <p class="t-14"> <strong>Lenguajes utilizados</strong></p>
+                    <p class="t-14">Java</p>
+
+                    <p class="t-14"><strong>Base de datos</strong></p>
+                    <p class="t-14">SQL - Mysql</p>
+                    <p class="t-14"><strong>Sistema operativo</strong></p>
+                    <p class="t-14">Red Hat Enterprise Linux</p>
+                    <p class="t-14">Server release 7.3 (Maipo)</p>
+                    <img class="padding-20" src="img/modernizacion.jpg" alt="DNST" width="80">
+
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 mt-4 mb-4">
+                    <p class="t-14"><strong>Lanzamiento</strong></p>
+                    <p class="t-14">06/06/18</p>
+                    <p class="t-14"><strong>Última versión</strong></p>
+                    <p class="t-14">31/5/2019</p>
+                  </div>
+                  <!--<div class="col-xs-12 col-md-6 t-14">
+                    <p style="color: #2E7D33"><strong>Implementado en:</strong></p>
+                    <p><strong>Ministerio de Producción y Trabajo de la Nación:</strong> Certificaciones Eléctricas, Certificaciones AML Apertura y cierre, DOM, CDV, Certificaciones no eléctricas; <strong>Ministerio de Transporte de la Nación:</strong> Excepciones de Cabotaje.</p>
+
+                  </div>-->
+
+                  <!--                        <div class="col-xs-12 col-md-3" >-->
+                  <!--                            <p class="t-14"><strong>Lenguajes utilizados</strong></p>-->
+                  <!--                            <p class="t-14">Java</p>-->
+                  <!---->
+                  <!--                            <p class="t-14"><strong>Base de datos</strong></p>-->
+                  <!--                            <p class="t-14">SQL - Mysql</p>-->
+                  <!--                            <p class="t-14"><strong>Lanzamiento</strong></p>-->
+                  <!--                            <p class="t-14">06/06/18</p>-->
+                  <!--                            <img class="padding-20" src="img/logo.svg" alt="DNST" width="80">-->
+                  <!--                        </div>-->
+                  <!--                        <div class="col-xs-12 col-md-3">-->
+                  <!--                            <p class="t-14"><strong>Sistema operativo</strong></p>-->
+                  <!--                            <p class="t-14">Red Hat Enterprise Linux</p>-->
+                  <!--                            <p class="t-14">Server release 7.3 (Maipo)</p>-->
+                  <!--                            <p class="t-14"><strong>Última versión</strong></p>-->
+                  <!--                            <p class="t-14">31/5/2019</p>-->
+                  <!--                        </div>-->
+
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 d-flex justify-content-center mt-5">
+                    <!--                            <button id="closeModal" type="button" class="btn btn-default hidden-lg" data-dismiss="modal"><span>Cerrar</span></button>-->
+                    <!--                            <button type="button" class="btn btn-default btn-lg btn-block hidden-lg" data-dismiss="modal">Cerrar</button>-->
+                    <!--                            <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bd-contacto-modal-lg">Contacto</button>-->
+                    <!--                            <a type="button" data-toggle="modal" data-target=".bd-contacto-modal-lg" href="">-->
+                    <!--                                <button type="button" class="btn btn-success contactanos" data-dismiss="modal"><span>Contactanos</span></button>-->
+                    <!--                            </a>-->
+                    <!--<button id="closeModal" type="button" class="btn btn-default" data-dismiss="modal"><span>Cerrar</span></button>-->
+                    <a type="button" data-toggle="modal" data-target=".bd-contacto-modal-lg">
+                      <button type="button" class="btn btn-success contactanos text-center" data-dismiss="modal"><span>Contactanos</span></button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="container-fluid" style="padding: 2% 0 0 1%;border-top: 1px solid #CCCCCC;">
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <img src="img/jimenez-ilustracion.png" class="img-responsive">
-                </div>
-                <div class="col-xs-12 col-md-3">
-                  <p class="t-14"> <strong>Lenguajes utilizados</strong></p>
-                  <p class="t-14">Java</p>
-
-                  <p class="t-14"><strong>Base de datos</strong></p>
-                  <p class="t-14">SQL - Mysql</p>
-                  <p class="t-14"><strong>Sistema operativo</strong></p>
-                  <p class="t-14">Red Hat Enterprise Linux</p>
-                  <p class="t-14">Server release 7.3 (Maipo)</p>
-
-                </div>
-
-                <div class="col-xs-12 col-md-3">
-                  <p class="t-14"><strong>Lanzamiento</strong></p>
-                  <p class="t-14">06/06/18</p>
-                  <p class="t-14"><strong>Última versión</strong></p>
-                  <p class="t-14">31/5/2019</p>
-                </div>
-                <div class="col-xs-12 col-md-6 t-14">
-                  <p style="color: #2E7D33"><strong>Implementado en:</strong></p>
-                  <p><strong>Ministerio de Producción y Trabajo de la Nación:</strong> Certificaciones Eléctricas, Certificaciones AML Apertura y cierre, DOM, CDV, Certificaciones no eléctricas; <strong>Ministerio de Transporte de la Nación:</strong> Excepciones de Cabotaje.</p>
-                  <img class="padding-20" src="img/logo.svg" alt="DNST" width="80">
-                </div>
-
-                <!--                        <div class="col-xs-12 col-md-3" >-->
-                <!--                            <p class="t-14"><strong>Lenguajes utilizados</strong></p>-->
-                <!--                            <p class="t-14">Java</p>-->
-                <!---->
-                <!--                            <p class="t-14"><strong>Base de datos</strong></p>-->
-                <!--                            <p class="t-14">SQL - Mysql</p>-->
-                <!--                            <p class="t-14"><strong>Lanzamiento</strong></p>-->
-                <!--                            <p class="t-14">06/06/18</p>-->
-                <!--                            <img class="padding-20" src="img/logo.svg" alt="DNST" width="80">-->
-                <!--                        </div>-->
-                <!--                        <div class="col-xs-12 col-md-3">-->
-                <!--                            <p class="t-14"><strong>Sistema operativo</strong></p>-->
-                <!--                            <p class="t-14">Red Hat Enterprise Linux</p>-->
-                <!--                            <p class="t-14">Server release 7.3 (Maipo)</p>-->
-                <!--                            <p class="t-14"><strong>Última versión</strong></p>-->
-                <!--                            <p class="t-14">31/5/2019</p>-->
-                <!--                        </div>-->
-
-              </div>
-              <div class="row" style="margin-top: 5%">
-                <div class="center-block" style="text-align: center;margin-top: 30px;margin-bottom: 20px;">
-                  <!--                            <button id="closeModal" type="button" class="btn btn-default hidden-lg" data-dismiss="modal"><span>Cerrar</span></button>-->
-                  <!--                            <button type="button" class="btn btn-default btn-lg btn-block hidden-lg" data-dismiss="modal">Cerrar</button>-->
-                  <!--                            <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bd-contacto-modal-lg">Contacto</button>-->
-                  <!--                            <a type="button" data-toggle="modal" data-target=".bd-contacto-modal-lg" href="">-->
-                  <!--                                <button type="button" class="btn btn-success contactanos" data-dismiss="modal"><span>Contactanos</span></button>-->
-                  <!--                            </a>-->
-                  <button id="closeModal" type="button" class="btn btn-default" data-dismiss="modal"><span>Cerrar</span></button>
-                  <a type="button" data-toggle="modal" data-target=".bd-contacto-modal-lg" href="">
-                    <button type="button" class="btn btn-success contactanos" data-dismiss="modal"><span>Contactanos</span></button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
           </div>
-
         </div>
       </div>
     </div>
